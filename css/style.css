@@ -8040,11 +8040,14 @@ body.__lock {
   padding-bottom: 375px;
 }
 
+<<<<<<< HEAD
 .bilets {
   background: url("..//img/bg-bilets.png") center top no-repeat;
   background-size: cover;
 }
 
+=======
+>>>>>>> 9e25dee8bab76648552a458c641750d879691fd9
 .bilets__title {
   font-size: 36px;
   text-align: center;
@@ -8083,7 +8086,10 @@ body.__lock {
 }
 
 .bilets__item {
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> 9e25dee8bab76648552a458c641750d879691fd9
   -webkit-box-flex: 0;
       -ms-flex: 0 1 350px;
           flex: 0 1 350px;
@@ -8118,6 +8124,7 @@ body.__lock {
   font-size: 24px;
 }
 
+<<<<<<< HEAD
 .bilets__img {
   display: block;
   position: absolute;
@@ -8133,6 +8140,8 @@ body.__lock {
   width: 50px;
 }
 
+=======
+>>>>>>> 9e25dee8bab76648552a458c641750d879691fd9
 .bilets__select {
   height: 73px;
   width: 100%;
@@ -8879,7 +8888,10 @@ video[poster] {
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
     text-align: center;
+<<<<<<< HEAD
     word-wrap: break-word;
+=======
+>>>>>>> 9e25dee8bab76648552a458c641750d879691fd9
   }
 
   .block__text {
@@ -8958,6 +8970,9 @@ video[poster] {
   }
 }
 
+<<<<<<< HEAD
 .webp .bilets { background: url(..//img/bg-bilets.webp) center top no-repeat; }
 
+=======
+>>>>>>> 9e25dee8bab76648552a458c641750d879691fd9
 .webp ::-webkit-calendar-picker-indicator { background: url(..//img/date-icon.webp) no-repeat center; }
