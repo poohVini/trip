@@ -8118,6 +8118,21 @@ body.__lock {
   font-size: 24px;
 }
 
+.bilets__item input::-webkit-calendar-picker-indicator {
+  background: #ffffff2c url("..//img/date-icon.png") top left 100% 100% no-repeat;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  display: block;
+}
+
+.bilets__item input::-webkit-calendar-picker-indicator:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .bilets__img {
   display: block;
   position: absolute;
@@ -8959,5 +8974,7 @@ video[poster] {
 }
 
 .webp .bilets { background: url(..//img/bg-bilets.webp) center top no-repeat; }
+
+.webp .bilets__item input::-webkit-calendar-picker-indicator { background: #ffffff2c url(..//img/date-icon.webp) top left 100% 100% no-repeat; }
 
 .webp ::-webkit-calendar-picker-indicator { background: url(..//img/date-icon.webp) no-repeat center; }
