@@ -8280,6 +8280,10 @@ input::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+._touch .bilets__item .Dates::after {
+  display: none;
+}
+
 @media (min-width: 420px) {
   body._touch #volume input {
     width: 80px;
