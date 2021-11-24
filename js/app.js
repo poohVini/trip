@@ -291,6 +291,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	// /playlist//
 });
 
+let date = document.querySelector(".Dates");
+date.onfocus = function () {
+	document.querySelector(".label").classList.add("focus");
+	document.querySelector(".Dates").classList.add("focus-dates");
+};
+date.onblur = function () {
+	document.querySelector(".label").classList.remove("focus");
+	document.querySelector(".Dates").classList.remove("focus-dates");
+};
+
+
+// date.onclick = function () {
+// 	if (date.value == 0) {
+
+// 	}
+
+// }
 
 function ibg() {
 	let ibg = document.querySelectorAll(".ibg");

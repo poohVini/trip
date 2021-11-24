@@ -8111,26 +8111,29 @@ body.__lock {
 }
 
 .bilets__item input {
+  z-index: 2;
   width: 100%;
   height: 73px;
   background: none;
   padding: 0 20px;
   font-size: 24px;
+  position: relative;
 }
 
-.bilets__item input::-webkit-calendar-picker-indicator {
-  background: #ffffff2c url("..//img/date-icon.png") top left 100% 100% no-repeat;
+.bilets__item input::after {
+  content: "";
+  background: url("..//img/date-icon.png") top left/50px 50px no-repeat;
+  background-size: contain;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: calc(50% - 15px);
+  right: 20px;
   -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  cursor: pointer;
   display: block;
-}
-
-.bilets__item input::-webkit-calendar-picker-indicator:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  z-index: -1;
 }
 
 .bilets__img {
@@ -8201,6 +8204,67 @@ input[type="date"] {
 video[poster] {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.label {
+  display: block;
+  width: 150px;
+  position: absolute;
+  left: 25px;
+  top: calc(50% - 11px);
+  display: block;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.focus {
+  display: none;
+}
+
+input::-webkit-datetime-edit-day-field {
+  display: none;
+  cursor: pointer;
+}
+
+input::-webkit-datetime-edit-month-field {
+  display: none;
+  cursor: pointer;
+}
+
+input::-webkit-datetime-edit-year-field {
+  display: none;
+  cursor: pointer;
+}
+
+input::-webkit-datetime-edit-text {
+  display: none;
+  cursor: pointer;
+}
+
+input.focus-dates::-webkit-datetime-edit-day-field {
+  display: inline;
+}
+
+input.focus-dates::-webkit-datetime-edit-month-field {
+  display: inline;
+}
+
+input.focus-dates::-webkit-datetime-edit-year-field {
+  display: inline;
+}
+
+input.focus-dates::-webkit-datetime-edit-text {
+  display: inline;
+}
+
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  height: 30px;
+  cursor: pointer;
 }
 
 @media (min-width: 420px) {
@@ -8628,6 +8692,10 @@ video[poster] {
   option {
     font-size: calc(18px + 6 * ((100vw - 320px) / 1320));
   }
+
+  .label {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 1320));
+  }
 }
 
 @media (max-width: 1228px) {
@@ -8975,6 +9043,6 @@ video[poster] {
 
 .webp .bilets { background: url(..//img/bg-bilets.webp) center top no-repeat; }
 
-.webp .bilets__item input::-webkit-calendar-picker-indicator { background: #ffffff2c url(..//img/date-icon.webp) top left 100% 100% no-repeat; }
+.webp .bilets__item input::after { background: url(..//img/date-icon.webp) top left/50px 50px no-repeat; }
 
 .webp ::-webkit-calendar-picker-indicator { background: url(..//img/date-icon.webp) no-repeat center; }
