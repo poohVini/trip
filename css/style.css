@@ -8267,6 +8267,10 @@ input::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 @media (min-width: 420px) {
   body._touch #volume input {
     width: 80px;
