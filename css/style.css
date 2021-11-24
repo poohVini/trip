@@ -8222,6 +8222,11 @@ video[poster] {
   display: none;
 }
 
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 input::-webkit-datetime-edit-day-field {
   display: none;
   opacity: 0;
@@ -8269,10 +8274,6 @@ input::-webkit-calendar-picker-indicator {
   transition: all 0.3s ease 0s;
   height: 30px;
   cursor: pointer;
-}
-
-input.bilets__select::-webkit-inner-spin-button {
-  display: none;
 }
 
 @media (min-width: 420px) {
