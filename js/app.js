@@ -297,8 +297,10 @@ date.onfocus = function () {
 	document.querySelector(".Dates").classList.add("focus-dates");
 };
 date.onblur = function () {
-	document.querySelector(".label").classList.remove("focus");
-	document.querySelector(".Dates").classList.remove("focus-dates");
+	if (date.value == 0) {
+		document.querySelector(".label").classList.remove("focus");
+		document.querySelector(".Dates").classList.remove("focus-dates");
+	}
 };
 
 
