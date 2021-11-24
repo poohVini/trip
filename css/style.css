@@ -8225,6 +8225,8 @@ video[poster] {
 input[type="date"]::-webkit-outer-spin-button,
 input[type="date"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  margin: 0;
+  display: none;
 }
 
 input[type="date"]::-webkit-clear-button {
