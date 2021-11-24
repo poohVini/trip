@@ -8222,22 +8222,22 @@ video[poster] {
   display: none;
 }
 
-.Dates::-webkit-datetime-edit-day-field {
+input::-webkit-datetime-edit-day-field {
   display: none;
   opacity: 0;
 }
 
-.Dates::-webkit-datetime-edit-month-field {
+input::-webkit-datetime-edit-month-field {
   display: none;
   opacity: 0;
 }
 
-.Dates::-webkit-datetime-edit-year-field {
+input::-webkit-datetime-edit-year-field {
   display: none;
   opacity: 0;
 }
 
-.Dates::-webkit-datetime-edit-text {
+input::-webkit-datetime-edit-text {
   display: none;
   opacity: 0;
 }
