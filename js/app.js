@@ -303,6 +303,7 @@ date.onblur = function () {
 	}
 };
 
+
 function ibg() {
 	let ibg = document.querySelectorAll(".ibg");
 	for (var i = 0; i < ibg.length; i++) {

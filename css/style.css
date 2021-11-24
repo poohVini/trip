@@ -8115,7 +8115,7 @@ body.__lock {
   width: 100%;
   height: 73px;
   background: none;
-  padding: 0 20px;
+  margin: 0 20px;
   font-size: 24px;
   position: relative;
 }
@@ -8128,7 +8128,7 @@ body.__lock {
   width: 30px;
   height: 30px;
   top: calc(50% - 15px);
-  right: 20px;
+  right: 0;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -8222,8 +8222,7 @@ video[poster] {
   display: none;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type="date"]::-webkit-inner-spin-button {
   display: none;
   -webkit-appearance: none;
 }
