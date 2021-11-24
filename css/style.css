@@ -8242,19 +8242,19 @@ input::-webkit-datetime-edit-text {
   cursor: pointer;
 }
 
-input.focus-dates::-webkit-datetime-edit-day-field {
+.focus-dates::-webkit-datetime-edit-day-field {
   display: inline;
 }
 
-input.focus-dates::-webkit-datetime-edit-month-field {
+.focus-dates::-webkit-datetime-edit-month-field {
   display: inline;
 }
 
-input.focus-dates::-webkit-datetime-edit-year-field {
+.focus-dates::-webkit-datetime-edit-year-field {
   display: inline;
 }
 
-input.focus-dates::-webkit-datetime-edit-text {
+.focus-dates::-webkit-datetime-edit-text {
   display: inline;
 }
 
@@ -8267,8 +8267,8 @@ input::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-input[type="date"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+input.bilets__select::-webkit-inner-spin-button {
+  display: none;
 }
 
 @media (min-width: 420px) {
