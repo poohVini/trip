@@ -8222,11 +8222,10 @@ video[poster] {
   display: none;
 }
 
-input[type="date"]::-webkit-outer-spin-button,
-input[type="date"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
+  -webkit-appearance: none;
 }
 
 input[type="date"]::-webkit-clear-button {
